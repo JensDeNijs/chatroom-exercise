@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatroom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container bg-secondary px-5">
+    <div class="text-center py-5">
+        <h1 class="display-2">CHAD-ROOM</h1>
+        <h3 class="h1">Welcome <span id="headName"></span>!</h3>
+    </div>
+
+    <div class="row justify-content-center  pb-5">
+        <div class="col-auto">
+            <input class="form-control" id="name" placeholder="Change Name">
+        </div>
+        <div class="col-auto">
+            <button class="btn rounded-pill btn-dark" id="changeName">Change Name</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="bg-white overflow-auto" id="allMessages">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row my-2 ">
+        <div class="col">
+            <input class="w-100 form-control" id="message" placeholder="Send Message">
+        </div>
+        <div class="col-auto">
+            <button class="btn rounded-pill btn-dark" id="sendAll">Send To All</button>
+        </div>
+        <div class="col-auto">
+            <button class="btn rounded-pill btn-dark" id="sendYou">Send To You</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
