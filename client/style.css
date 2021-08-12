@@ -1,0 +1,35 @@
+body{
+    overflow: hidden ;
+    background-color: #e2e2e2;
+}
+#allMessages{
+    height: 500px;
+}
+.container{
+    min-height: 1000px;
+
+}
+#textMessage{
+    max-width: 400PX;
+}
+#textMe{
+    text-align: end;
+    max-width: 100%;
+}
+#textYou{
+    max-width: 100%;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #212529;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
